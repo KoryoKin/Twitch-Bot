@@ -1,0 +1,9 @@
+{
+    "BaseExperience":100,
+    "Multiplier":1.45,
+    "Index":{
+        "Message":12,
+        "Follow":300,
+        "Subscribe":3400
+    }
+}
