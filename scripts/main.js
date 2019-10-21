@@ -17,14 +17,14 @@ client.connect().then(async data => {
 
 async function update(){
     client.on("subscription", (channel, user, method, message, userstate) => {
-        client.action(channel, user["display-name"] + ", acabou de se inscrever. Muito Obrigado! <3")
+        client.action(channel, user["display-name"] + ", just subscribed. Thanks You! <3")
     });
     client.on("resub", (channel, user, months, message, userstate, method) => {
-        client.action(channel, user["display-name"] + ", acabou de se re-inscrever por " + months + " meses. Muito Obrigado! <3")
+        client.action(channel, user["display-name"] + ", just re-subscribed for " + months + " months. Thanks You! <3")
     });
     client.on("hosted", (channel, username, viewers, autohost) => {
         if(viewers >= 10){
-            client.action(channel, user["display-name"] + ", gankou com " + viewers + " viewers. Muito Obrigado! <3")
+            client.action(channel, user["display-name"] + ", ganked with " + viewers + " viewers. Thanks You! <3")
         }
     });
     
@@ -61,7 +61,7 @@ function readInput(channel, user, input){
         }
         else
         {
-            client.whisper(user["display-name"], "'" + userInput + "' não é um comando.");
+            client.whisper(user["display-name"], "'" + userInput + "' is not a command.");
         }
     }
 }
@@ -76,7 +76,7 @@ function userExperience(channel, user){
         vi.Channels[channel][user["display-name"]].Experience -= vc.BaseExperience * vc.Multiplier * vi.Channels[channel][user["display-name"]].Level;
         vi.Channels[channel][user["display-name"]].Level++;
 
-        client.whisper(user["display-name"], "Parabéns, você avançou para o level " + vi.Channels[channel][user["display-name"]].Level + "!");
+        client.whisper(user["display-name"], "Congratulations, you are now level " + vi.Channels[channel][user["display-name"]].Level + "!");
     }
 
     fs.writeFile("./scripts/ViewerInfo.json", JSON.stringify(vi), (err) => {
@@ -92,6 +92,6 @@ function messageCounter(channel, input){
             if(err) throw err;
         });
 
-        client.say(channel, input + " foi usado [" + JSON.stringify(ci[channel].Messages[input]) + "] vezes.");
+        client.say(channel, input + " has been used [" + JSON.stringify(ci[channel].Messages[input]) + "] times.");
     }
 }
