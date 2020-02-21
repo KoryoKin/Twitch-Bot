@@ -7,8 +7,8 @@
         "reconnect":true
     },
     "identity":{
-        "username":"wolyobot",
-        "password":"oauth:siwv5y4smmnm48i1tw8yzo2imb8yjx"
+        "username":"botname",
+        "password":"oauth"
     },
-    "channels":["#koryokin"]
+    "channels":["#channelname"]
 }

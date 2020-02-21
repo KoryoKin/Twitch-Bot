@@ -1,7 +1,7 @@
 {
-    "#koryokin":{
-        "InputOutput":{
-            "idade":"18"
+    "#channelname":{
+        "inputOutput":{
+            "command":"answer"
         }
     }
 }

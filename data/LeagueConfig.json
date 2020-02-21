@@ -1,0 +1,8 @@
+{
+    "APIKey":"API Key given by Riot Games",
+    "#channelname":{
+        "Summoners":[
+            "SummonerName"
+        ]
+    }
+}

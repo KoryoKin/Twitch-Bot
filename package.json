@@ -1,0 +1,26 @@
+{
+  "name": "wolyotwitchbot",
+  "version": "1.0.0",
+  "description": "Fully costumizable bot using JSON configurations.",
+  "main": "main.js",
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "tmi": "^2.0.0",
+    "tmi.js": "^1.2.1",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KorioKin/WolyoBot.git"
+  },
+  "author": "Arthur Amorim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KorioKin/WolyoBot/issues"
+  },
+  "homepage": "https://github.com/KorioKin/WolyoBot#readme"
+}
